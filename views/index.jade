@@ -1,0 +1,31 @@
+extends layout
+
+block css
+  |table {margin-top:15px;}
+  |td{vertical-align:middle!important;}
+  |td > strong {padding:5px;border:2px solid #ccc;border-radius:50%;}
+
+block content
+  h1 Twitter search
+  p Enter your search terms
+  form(action='testpost', method='post')
+    input(type='hidden',name='_csrf',value=csrfToken)
+    div.input-group.col-xs-12.col-sm-8.col-md-6
+      input.form-control(type='text',name='text')
+      span.input-group-btn
+        button.btn.btn-default search
+  - if (result)
+    table.table
+      thead
+        tr
+          th(colspan='2')
+          th Name
+          th Status
+      - for (var i=0; i<result.length;i++)
+        tr
+          td
+            strong=i+1
+          td
+            img(src=result[i].user.profile_image_url)
+          td=result[i].user.name
+          td=result[i].text
