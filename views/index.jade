@@ -1,7 +1,7 @@
 extends layout
 
 block css
-  |table {margin-top:15px;}
+  |.table-responsive {margin-top:15px;}
   |td{vertical-align:middle!important;}
 
 block content
@@ -14,17 +14,19 @@ block content
       span.input-group-btn
         button.btn.btn-default search
   - if (result)
-    table.table
-      thead
-        tr
-          th(colspan='2')
-          th Name
-          th Status
-      - for (var i=0; i<result.length;i++)
-        tr
-          td
-            strong=i+1
-          td
-            img(src=result[i].user.profile_image_url)
-          td=result[i].user.name
-          td=result[i].text
+    .table-responsive
+      table.table.table-condensed
+        thead
+          tr
+            th(colspan='2')
+            th Name
+            th Status
+        - for (var i=0; i<result.length;i++)
+          tr
+            td
+              strong=i+1
+            td
+              img(src=result[i].user.profile_image_url)
+            td=result[i].user.name
+              p.small=result[i].user.screen_name
+            td=result[i].text
