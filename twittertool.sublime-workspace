@@ -1,0 +1,194 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 878,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/James/Documents/GitHub/twittertool/README.md",
+		"/C/Users/James/Documents/GitHub/ostwittertool/README.md",
+		"/C/Users/James/Documents/GitHub/ostwittertool/views/layout.jade",
+		"/C/Users/James/Documents/GitHub/ostwittertool/views/index.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
+		"/C/Users/James/Documents/GitHub/dopeslingertycoon/index.html",
+		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
+		"/C/Users/James/Documents/GitHub/ostwittertool/bin/www",
+		"/C/Users/James/Documents/GitHub/ostwittertool - Copy/server.js",
+		"/C/Users/James/Documents/GitHub/ostwittertool/server.js",
+		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
+		"/C/Users/James/Dropbox/NodeProject/myapp/views/index.jade",
+		"/C/Users/James/Dropbox/NodeProject/myapp/views/layout.jade",
+		"/C/Users/James/Dropbox/NodeProject/myapp/app.js",
+		"/C/Users/James/Dropbox/NodeProject/myapp/routes/index.js",
+		"/C/Users/James/Dropbox/NodeProject/myapp/routes/users.js",
+		"/C/Users/James/Dropbox/NodeProject/myapp/public/stylesheets/style.css",
+		"/C/Users/James/Dropbox/NodeProject/myapp/views/error.jade",
+		"/C/Users/James/Dropbox/NodeProject/myapp/bin/www"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error",
+			"look",
+			"did"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								848,
+								848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

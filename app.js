@@ -8,7 +8,9 @@ var bodyParser = require('body-parser');
 var csrf = require('csurf');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + process.env.OPENSHIFT_MONGODB_DB_PORT + '/twittertool');
+var MongooseSessionStore = require('express-mongoose-store')(session,mongoose);
 var app = express();
 
 var twitter = require('twitter');
@@ -30,6 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({
     secret:'ATYXLSNDF348732459ANFKAgGgRrR',
+    store: new MongooseSessionStore(),
     resave:false,
     saveUninitialized:true,
     cookie:{httpOnly:true}}));
