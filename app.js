@@ -9,9 +9,14 @@ var csrf = require('csurf');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + process.env.OPENSHIFT_MONGODB_DB_PORT + '/twittertool');
-var MongooseSessionStore = require('express-mongoose-store')(session,mongoose);
 var app = express();
+if (app.get('env') === 'development')
+    mongoose.connect('mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + process.env.OPENSHIFT_MONGODB_DB_PORT + '/twittertool');
+else
+    mongoose.connect('mongodb://admin:fSJjWvp3lTqJ@' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + process.env.OPENSHIFT_MONGODB_DB_PORT + '/twittertool');
+
+var MongooseSessionStore = require('express-mongoose-store')(session,mongoose);
+
 
 var twitter = require('twitter');
 twitterClient = new twitter({
