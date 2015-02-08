@@ -3,16 +3,26 @@ extends layout
 block css
   |.table-responsive {margin-top:15px;}
   |td{vertical-align:middle!important;}
+  |span.history{margin-right:10px;}
+  |p.recent{margin:-5px 0 0;}
 
 block content
   h1 Twitter search
   p Enter your search terms
-  form(action='testpost', method='post')
-    input(type='hidden',name='_csrf',value=csrfToken)
-    div.input-group.col-xs-12.col-sm-8.col-md-6
-      input.form-control(type='text',name='text')
-      span.input-group-btn
-        button.btn.btn-default search
+  .row
+    .col-xs-12.col-md-6
+      form(action='testpost', method='post')
+        input(type='hidden',name='_csrf',value=csrfToken)
+        div.input-group
+          input.form-control(type='text',name='text')
+          span.input-group-btn
+            button.btn.btn-default search
+    - if (history)
+      div.col-xs-12.col-md-6
+        p.recent
+          strong Recent searches
+        - for (var i=0;i<history.length;i++)
+          span.history='"'+history[i].query+'"'
   - if (result)
     .table-responsive
       table.table.table-condensed
