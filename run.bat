@@ -4,3 +4,4 @@ set OPENSHIFT_MONGODB_DB_HOST=localhost
 set OPENSHIFT_MONGODB_DB_PORT=27017
 start http://localhost/
 node server.js
+pause
