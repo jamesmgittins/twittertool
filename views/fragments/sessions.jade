@@ -1,0 +1,12 @@
+h2 Sessions
+table.table
+  thead
+    tr
+      th sid
+      th created
+  tbody
+    - if (sessions && sessions.length > 0)
+      - for (var i=0; i< sessions.length; i++)
+        tr
+          td=sessions[i].sid
+          td=sessions[i].created

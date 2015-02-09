@@ -3,6 +3,18 @@
 	{
 		"selected_items":
 		[
+			[
+				"get",
+				"getReplace"
+			],
+			[
+				"tab",
+				"tab-content"
+			],
+			[
+				"sear",
+				"searchHistory"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +23,23 @@
 			"file": "views/index.jade",
 			"settings":
 			{
-				"buffer_size": 878,
+				"buffer_size": 1193,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 2487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/fragments/sessions.jade",
+			"settings":
+			{
+				"buffer_size": 239,
 				"line_ending": "Windows"
 			}
 		}
@@ -44,17 +72,28 @@
 	},
 	"file_history":
 	[
+		"/C/Users/James/Documents/GitHub/twittertool/views/admin.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/public/stylesheets/style.css",
+		"/C/Users/James/Documents/GitHub/twittertool/routes/index.js",
+		"/C/Users/James/Documents/GitHub/twittertool/routes/admin.js",
+		"/C/Users/James/Documents/GitHub/twittertool/public/javascripts/scripts.js",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/users.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions",
+		"/C/Users/James/Documents/GitHub/twittertool/app.js",
+		"/C/Users/James/Documents/GitHub/twittertool/run.bat",
+		"/C/Users/James/Documents/GitHub/twittertool/views/error.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
 		"/C/Users/James/Documents/GitHub/twittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/views/layout.jade",
 		"/C/Users/James/Documents/GitHub/ostwittertool/views/index.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
 		"/C/Users/James/Documents/GitHub/dopeslingertycoon/index.html",
-		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
 		"/C/Users/James/Documents/GitHub/ostwittertool/bin/www",
 		"/C/Users/James/Documents/GitHub/ostwittertool - Copy/server.js",
 		"/C/Users/James/Documents/GitHub/ostwittertool/server.js",
-		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
 		"/C/Users/James/Dropbox/NodeProject/myapp/views/index.jade",
 		"/C/Users/James/Dropbox/NodeProject/myapp/views/layout.jade",
 		"/C/Users/James/Dropbox/NodeProject/myapp/app.js",
@@ -100,6 +139,7 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -107,15 +147,15 @@
 					"file": "views/index.jade",
 					"settings":
 					{
-						"buffer_size": 878,
+						"buffer_size": 1193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								848,
-								848
+								1193,
+								1193
 							]
 						],
 						"settings":
@@ -123,6 +163,60 @@
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 2487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								772,
+								792
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/fragments/sessions.jade",
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -139,7 +233,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -189,6 +283,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 203.0,
 	"status_bar_visible": true
 }

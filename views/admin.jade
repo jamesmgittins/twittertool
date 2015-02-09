@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1 Admin
+	ul.nav.nav-tabs
+		li(role="presentation"): a(href="#",onclick="tabNavigation(this,event);",data-action="/admin/users",data-target="#tab-content") Users
+		li(role="presentation"): a(href="#",onclick="tabNavigation(this,event);",data-action="/admin/sessions",data-target="#tab-content") Sessions
+	div#tab-content

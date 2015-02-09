@@ -3,12 +3,25 @@ html
   head
     title Twitter Research Tool
     meta(name="viewport",content="initial-scale=1.0")
-    //link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
     style
       block css
   body
+    nav.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button(type="button",data-toggle="collapse",data-target="#bs-navbar-collapse").navbar-toggle.collapsed
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href="/").navbar-brand Twittertool
+        div#bs-navbar-collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li: a(href="/admin/") Admin
+
     div.container
       block content
   script(src='//code.jquery.com/jquery-1.11.2.min.js')
   script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+  script(src='/javascripts/scripts.js')

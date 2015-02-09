@@ -7,7 +7,7 @@ var searchHistory = mongoose.model('searchhistory',{query:String,time:Date});
 /* GET home page. */
 router.get('/', function(req, res, next) {
   searchHistory.find().sort('-time').limit(3).exec(function(err, results){
-	res.render('index', { result:req.session.result, csrfToken:req.csrfToken(), history:results });
+	  res.render('index', { result:req.session.result, csrfToken:req.csrfToken(), history:results });
   });
 });
 
