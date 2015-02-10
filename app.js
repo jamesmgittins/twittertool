@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({
     secret:'ATYXLSNDF348732459ANFKAgGgRrR',
-    store: new MongooseSessionStore(),
+    store: new MongooseSessionStore({ttl:0}),
     resave:false,
     saveUninitialized:true,
     cookie:{httpOnly:true}}));

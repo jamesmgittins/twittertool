@@ -4,9 +4,11 @@ table.table
     tr
       th sid
       th created
+      th expires
   tbody
     - if (sessions && sessions.length > 0)
       - for (var i=0; i< sessions.length; i++)
         tr
           td=sessions[i].sid
           td=sessions[i].created
+          td=new Date(JSON.parse(sessions[i].session).cookie.expires)
