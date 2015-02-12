@@ -31,7 +31,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2494,
+				"buffer_size": 2515,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "routes/admin.js",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 594,
 				"line_ending": "Windows"
 			}
 		}
@@ -199,15 +199,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2494,
+						"buffer_size": 2515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1533,
-								1533
+								1539,
+								1539
 							]
 						],
 						"settings":
@@ -309,15 +309,15 @@
 					"file": "routes/admin.js",
 					"settings":
 					{
-						"buffer_size": 575,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								359,
+								359
 							]
 						],
 						"settings":

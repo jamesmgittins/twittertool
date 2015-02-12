@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 /* Get admin page */
 router.get('/sessions', function(req, res, next) {
-  sessions.find().sort('_id').exec(function(err, results){
+  sessions.find().sort('session.cookie.expires').exec(function(err, results){
   	res.render('fragments/sessions', {sessions:results});
   });
 });
