@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"input",
+				"input-group"
+			],
+			[
+				"input-group",
+				"input-group-addon"
+			],
+			[
 				"modal",
 				"modalbody"
 			],
@@ -31,7 +39,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2515,
+				"buffer_size": 2647,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +47,7 @@
 			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 1616,
+				"buffer_size": 2497,
 				"line_ending": "Unix"
 			}
 		},
@@ -47,7 +55,7 @@
 			"file": "routes/admin.js",
 			"settings":
 			{
-				"buffer_size": 795,
+				"buffer_size": 770,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,8 +63,72 @@
 			"file": "views/fragments/users.jade",
 			"settings":
 			{
-				"buffer_size": 175,
+				"buffer_size": 357,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/search.jade",
+			"settings":
+			{
+				"buffer_size": 1189,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/fragments/loginmodal.jade",
+			"settings":
+			{
+				"buffer_size": 2362,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "models/user.js",
+			"settings":
+			{
+				"buffer_size": 227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/javascripts/scripts.js",
+			"settings":
+			{
+				"buffer_size": 761,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 1177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 138,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 479,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -88,6 +160,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/James/Documents/GitHub/twittertool/package.json",
 		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/models/user.js",
@@ -142,6 +215,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"  \n",
 			"error",
 			"look",
 			"did"
@@ -162,7 +236,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -170,15 +244,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2515,
+						"buffer_size": 2647,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								405,
-								405
+								290,
+								290
 							]
 						],
 						"settings":
@@ -188,7 +262,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 405.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -198,15 +272,15 @@
 					"file": "routes/index.js",
 					"settings":
 					{
-						"buffer_size": 1616,
+						"buffer_size": 2497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1062,
-								1062
+								2282,
+								2282
 							]
 						],
 						"settings":
@@ -216,7 +290,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -226,15 +300,15 @@
 					"file": "routes/admin.js",
 					"settings":
 					{
-						"buffer_size": 795,
+						"buffer_size": 770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								795,
-								795
+								274,
+								274
 							]
 						],
 						"settings":
@@ -252,20 +326,239 @@
 					"file": "views/fragments/users.jade",
 					"settings":
 					{
-						"buffer_size": 175,
+						"buffer_size": 357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1071,
+								1071
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/search.jade",
+					"settings":
+					{
+						"buffer_size": 1189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1189,
+								1189
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/fragments/loginmodal.jade",
+					"settings":
+					{
+						"buffer_size": 2362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								853,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "models/user.js",
+					"settings":
+					{
+						"buffer_size": 227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/javascripts/scripts.js",
+					"settings":
+					{
+						"buffer_size": 761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 1177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								728,
+								728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "public/stylesheets/style.css",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

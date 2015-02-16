@@ -2,9 +2,15 @@ h2 Users
 table.table
   thead
     tr
-      td Email
+      th Email
+      th Password
+      th LogInSecret key
+      th LogInSecret time
   tbody
     - if (users && users.length > 0)
       -for (var i=0; i<users.length;i++)
         tr
           td=users[i].email
+          td=users[i].password
+          td=users[i].logInSecret.key
+          td=users[i].logInSecret.timestamp

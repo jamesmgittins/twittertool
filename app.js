@@ -6,8 +6,6 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var csrf = require('csurf');
-var routes = require('./routes/index');
-var users = require('./routes/users');
 var mongoose = require('mongoose');
 var app = express();
 if (app.get('env') === 'development')
@@ -48,13 +46,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Used to add general things for each request
 app.use(function (req, res, next) {
   res.locals.csrf=req.csrfToken();
+  res.locals.user=req.session.user;
   next();
 })
 
 
-app.use('/', routes);
-app.use('/users', users);
+app.use('/', require('./routes/index'));
 app.use('/admin', require('./routes/admin'));
+app.use('/search', require('./routes/search'));
 
 
 // catch 404 and forward to error handler
