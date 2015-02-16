@@ -3,3 +3,8 @@ table.table
   thead
     tr
       td Email
+  tbody
+    - if (users && users.length > 0)
+      -for (var i=0; i<users.length;i++)
+        tr
+          td=users[i].email

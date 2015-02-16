@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"modal",
+				"modalbody"
+			],
+			[
+				"mo",
+				"modalbody"
+			],
+			[
 				"get",
 				"getReplace"
 			],
@@ -20,14 +28,6 @@
 	"buffers":
 	[
 		{
-			"file": "views/index.jade",
-			"settings":
-			{
-				"buffer_size": 1193,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app.js",
 			"settings":
 			{
@@ -36,26 +36,10 @@
 			}
 		},
 		{
-			"file": "views/fragments/sessions.jade",
+			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 326,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/javascripts/scripts.js",
-			"settings":
-			{
-				"buffer_size": 446,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "node_modules/express-mongoose-store/index.js",
-			"settings":
-			{
-				"buffer_size": 3711,
+				"buffer_size": 1616,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +47,15 @@
 			"file": "routes/admin.js",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/fragments/users.jade",
+			"settings":
+			{
+				"buffer_size": 175,
 				"line_ending": "Windows"
 			}
 		}
@@ -96,24 +88,31 @@
 	},
 	"file_history":
 	[
-		"/C/Users/James/Documents/GitHub/twittertool/views/admin.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/models/user.js",
+		"/C/Users/James/Documents/GitHub/twittertool/routes/users.js",
+		"/C/Users/James/Documents/GitHub/twittertool/routes/admin.js",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/users.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/public/javascripts/scripts.js",
 		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/loginmodal.jade",
+		"/C/Users/James/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
+		"/C/Users/James/Documents/GitHub/twittertool/node_modules/mongoose/lib/index.js",
+		"/C/Users/James/Documents/GitHub/twittertool/node_modules/mongoose/index.js",
+		"/C/Users/James/Documents/GitHub/twittertool/node_modules/express-mongoose-store/index.js",
+		"/C/Users/James/Documents/GitHub/twittertool/views/admin.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/public/stylesheets/style.css",
 		"/C/Users/James/Documents/GitHub/twittertool/routes/index.js",
-		"/C/Users/James/Documents/GitHub/twittertool/routes/admin.js",
-		"/C/Users/James/Documents/GitHub/twittertool/public/javascripts/scripts.js",
-		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/users.jade",
-		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions",
 		"/C/Users/James/Documents/GitHub/twittertool/app.js",
 		"/C/Users/James/Documents/GitHub/twittertool/run.bat",
 		"/C/Users/James/Documents/GitHub/twittertool/views/error.jade",
-		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
 		"/C/Users/James/Documents/GitHub/twittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/views/layout.jade",
 		"/C/Users/James/Documents/GitHub/ostwittertool/views/index.jade",
-		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
 		"/C/Users/James/Documents/GitHub/dopeslingertycoon/index.html",
 		"/C/Users/James/Documents/GitHub/ostwittertool/bin/www",
 		"/C/Users/James/Documents/GitHub/ostwittertool - Copy/server.js",
@@ -168,34 +167,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "views/index.jade",
-					"settings":
-					{
-						"buffer_size": 1193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1193,
-								1193
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app.js",
 					"settings":
 					{
@@ -206,14 +177,42 @@
 						"selection":
 						[
 							[
-								1539,
-								1539
+								405,
+								405
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/index.js",
+					"settings":
+					{
+						"buffer_size": 1616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1062,
+								1062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -224,25 +223,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "views/fragments/sessions.jade",
+					"file": "routes/admin.js",
 					"settings":
 					{
-						"buffer_size": 326,
+						"buffer_size": 795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								795,
+								795
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -252,77 +249,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "public/javascripts/scripts.js",
+					"file": "views/fragments/users.jade",
 					"settings":
 					{
-						"buffer_size": 446,
+						"buffer_size": 175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								446,
-								446
+								58,
+								58
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "node_modules/express-mongoose-store/index.js",
-					"settings":
-					{
-						"buffer_size": 3711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								190,
-								190
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "routes/admin.js",
-					"settings":
-					{
-						"buffer_size": 594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

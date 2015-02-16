@@ -11,8 +11,8 @@ block content
   p Enter your search terms
   .row
     .col-xs-12.col-md-6
-      form(action='testpost', method='post')
-        input(type='hidden',name='_csrf',value=csrfToken)
+      form(action='/testpost', method='post')
+        input(type='hidden',name='_csrf',value=csrf)
         div.input-group
           input.form-control(type='text',name='text')
           span.input-group-btn

@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({
     secret:'ATYXLSNDF348732459ANFKAgGgRrR',
-    store: new MongooseSessionStore({ttl:3600000}),
+    store: new MongooseSessionStore({ttl:2400000}),
     resave:false,
     saveUninitialized:true,
     cookie:{httpOnly:true,maxAge:3600000}}));
@@ -45,9 +45,17 @@ app.use(session({
 app.use(csrf());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Used to add general things for each request
+app.use(function (req, res, next) {
+  res.locals.csrf=req.csrfToken();
+  next();
+})
+
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/admin', require('./routes/admin'));
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

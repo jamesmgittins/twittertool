@@ -1,0 +1,30 @@
+mixin modalbody
+  if (!email)
+    p Enter your email address to log in or register a new account. You will receive an email with a code to enter.
+    form#login-form(action='/login-email', method='post')
+      input(type='hidden',name='_csrf',value=csrf)
+      div.input-group
+        input.form-control(type='email',name='email',placeholder='email address')
+        span.input-group-btn
+          button.btn.btn-default(onclick="postReplace('#login-form','#login-modal .modal-body')") submit
+  else
+    p!='A code has been sent to your address - <strong>' + email + '</strong>. Please enter it now in the space below.'
+    form#login-form(action='/login-code',method='post')
+      input(type='hidden',name='_csrf',value=csrf)
+      div.input-group
+        input.form-control(type='text',name='code',placeholder='ABC123')
+        span.input-group-btn
+          button.btn.btn-default(onclick="postReplace('#login-form','#login-modal .modal-body')") submit
+
+if (!fragment)
+  div#login-modal.modal.fade(tabindex="-1",role="dialog",aria-labelledby="basicModal",aria-hidden="true")
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
+          h4#login-modal-label.modal-title Login
+        div.modal-body
+          +modalbody
+
+else
+  +modalbody
