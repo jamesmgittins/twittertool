@@ -9,7 +9,7 @@ block content
     h1 Twittertool
     h4 Enter your email address and password to log in to your account
     .row
-      .col-xs-12.col-sm-6
+      .col-xs-12.col-sm-9.col-md-6
         form#login-form(action='/login', method='post')
           input(type='hidden',name='_csrf',value=csrf)
           .input-group
@@ -20,6 +20,8 @@ block content
             input.form-control(type='password',name='password',placeholder='password')
           .input-group
             button.btn.btn-success Log in
+        if logInInfo=='password-reset-email-sent'
+          .alert.alert-info!='An email to reset your password has been sent to <strong>' + logInEmail + '</strong>.'
         if logInError=='email-not-found'
           .alert.alert-danger No account was found for that email address.
         if logInError=='bad-password'
@@ -28,7 +30,7 @@ block content
 
     h4 If you don't already have an account you can create one now
     .row
-      .col-xs-12.col-sm-6
+      .col-xs-12.col-sm-9.col-md-6
         form#register-form(action='/register', method='post')
           input(type='hidden',name='_csrf',value=csrf)
           .input-group
@@ -43,6 +45,8 @@ block content
           .input-group
             button.btn.btn-primary Register
         if regError=='email-already-used'
-          .alert.alert-danger That email address has already been registered. Please use the above log in
+          .alert.alert-danger That email address has already been registered. Please use the form above to log in.
         if regError=='password-mismatch'
-          .alert.alert-danger The passwords you have entered do not match
+          .alert.alert-danger The passwords you have entered do not match.
+        if regInfo=='account-created'
+          .alert.alert-info An email has been sent to your address in order for you to confirm your new account.

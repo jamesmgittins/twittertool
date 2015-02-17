@@ -50,7 +50,7 @@ app.use(function (req, res, next) {
   next();
 })
 
-
+// specific route handlers
 app.use('/', require('./routes/index'));
 app.use('/admin', require('./routes/admin'));
 app.use('/search', require('./routes/search'));

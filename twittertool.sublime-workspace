@@ -47,7 +47,7 @@
 			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 2497,
+				"buffer_size": 3470,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,7 +71,7 @@
 			"file": "views/index.jade",
 			"settings":
 			{
-				"buffer_size": 2058,
+				"buffer_size": 2404,
 				"line_ending": "Windows"
 			}
 		},
@@ -80,14 +80,6 @@
 			"settings":
 			{
 				"buffer_size": 1189,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "views/fragments/loginmodal.jade",
-			"settings":
-			{
-				"buffer_size": 2362,
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +103,7 @@
 			"file": "views/layout.jade",
 			"settings":
 			{
-				"buffer_size": 1177,
+				"buffer_size": 1026,
 				"line_ending": "Windows"
 			}
 		},
@@ -160,6 +152,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/loginmodal.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/package.json",
 		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/sessions.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
@@ -169,7 +162,6 @@
 		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/users.jade",
 		"/C/Users/James/Documents/GitHub/twittertool/public/javascripts/scripts.js",
 		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
-		"/C/Users/James/Documents/GitHub/twittertool/views/fragments/loginmodal.jade",
 		"/C/Users/James/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
 		"/C/Users/James/Documents/GitHub/twittertool/node_modules/mongoose/lib/index.js",
@@ -236,7 +228,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -272,15 +264,15 @@
 					"file": "routes/index.js",
 					"settings":
 					{
-						"buffer_size": 2497,
+						"buffer_size": 3470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2282,
-								2282
+								465,
+								465
 							]
 						],
 						"settings":
@@ -290,7 +282,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -354,15 +346,15 @@
 					"file": "views/index.jade",
 					"settings":
 					{
-						"buffer_size": 2058,
+						"buffer_size": 2404,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1071,
-								1071
+								882,
+								882
 							]
 						],
 						"settings":
@@ -395,32 +387,6 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/fragments/loginmodal.jade",
-					"settings":
-					{
-						"buffer_size": 2362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								853,
-								359
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -432,7 +398,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "models/user.js",
 					"settings":
 					{
@@ -458,7 +424,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "public/javascripts/scripts.js",
 					"settings":
 					{
@@ -485,19 +451,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "views/layout.jade",
 					"settings":
 					{
-						"buffer_size": 1177,
+						"buffer_size": 1026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								728,
-								728
+								109,
+								109
 							]
 						],
 						"settings":
@@ -513,7 +479,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "public/stylesheets/style.css",
 					"settings":
 					{
@@ -539,7 +505,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 10,
 					"file": "package.json",
 					"settings":
 					{
@@ -550,8 +516,8 @@
 						"selection":
 						[
 							[
-								344,
-								344
+								393,
+								393
 							]
 						],
 						"settings":

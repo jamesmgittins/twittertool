@@ -3,8 +3,8 @@ html
   head
     title Twitter Research Tool
     meta(name="viewport",content="initial-scale=1.0")
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     style
       block css
   body
@@ -19,14 +19,12 @@ html
         div#bs-navbar-collapse.collapse.navbar-collapse
           ul.nav.navbar-nav
             if user
-              li: a(href="/admin/") Admin
+              if user.sysAdmin
+                li: a(href="/admin/") Admin
               li: a(href="/logout") Log out
-            else
-              li: a(href="#",data-toggle="modal",data-target="#login-modal") Login / Register
 
     div.container
       block content
-    include ./fragments/loginmodal.jade
   script(src='//code.jquery.com/jquery-1.11.2.min.js')
   script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
   script(src='/javascripts/scripts.js')

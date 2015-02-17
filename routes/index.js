@@ -5,6 +5,29 @@ var mongoose = require('mongoose');
 var searchHistory = mongoose.model('searchhistory',{query:String,time:Date});
 var user = require('../models/user');
 
+var nodemailer = require('nodemailer');
+
+// create reusable transporter object using SMTP transport
+var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'jamesmgittins@gmail.com',
+        pass: 'obl1v1on'
+    }
+});
+
+// NB! No need to recreate the transporter object. You can use
+// the same transporter object for all e-mails
+
+// setup e-mail data with unicode symbols
+var mailOptions = {
+    from: 'Twittertool ✔ <twittertool@jamesgittins.com>', // sender address
+    to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers
+    subject: 'Password Reset ✔', // Subject line
+    text: 'Hello world ✔', // plaintext body
+    html: '<b>Hello world ✔</b>' // html body
+};
+
 /* GET home page. */
 router.get('/', function(req, res) {
   searchHistory.find().sort('-time').limit(3).exec(function(err, results){
@@ -34,6 +57,7 @@ router.post('/login', function(req, res){
     if (!results || results.length == 0) {
       res.render('index', {logInError:'email-not-found',logInEmail:req.body.email});
     } else if (results[0].password != req.body.password) {
+      req.session.email=req.body.email;
       res.render('index', {logInError:'bad-password', logInEmail:req.body.email});
       results[0].failedLogins.push({time:Date.now()});
       results[0].save(function(err, user){
@@ -46,10 +70,18 @@ router.post('/login', function(req, res){
   });
 });
 
-router.get('/new-user',function(req, res){
-  var aUser = new user({email:req.session.email,logInSecret:{key:'ABC123'}});
-  aUser.save(function(err, aUser){
-    res.render('fragments/loginmodal', {fragment:'email-found',email:req.session.email});
+router.get('/reset-password',function(req, res){
+  user.find({email:req.session.email}).exec(function(err, results){
+    res.render('index', {logInInfo:'password-reset-email-sent',logInEmail:req.session.email});
+    // send mail with defined transport object
+    mailOptions.to = req.session.email;
+    transporter.sendMail(mailOptions, function(error, info){
+      if(error){
+        console.log(error);
+      }else{
+        console.log('Message sent: ' + info.response);
+      }
+    });
   });
 });
 
@@ -67,9 +99,10 @@ router.post('/register', function(req, res){
         res.render('index', {regError:'password-mismatch',regEmail:req.body.email});
         return;
       }
-      var aUser = new user({email:req.body.email,password:req.body.password,logInSecret:{key:'ABC123'}});
+      var aUser = new user({email:req.body.email,password:req.body.password,logInSecret:{key:Date.now()},activated:false});
+      aUser.sysAdmin = aUser.email == "jamesmgittins@gmail.com";
       aUser.save(function(err, aUser){
-        res.render('fragments/loginmodal', {fragment:'email-found',email:req.session.email});
+        res.render('index', {regInfo:'account-created'});
       });
     }
   });
